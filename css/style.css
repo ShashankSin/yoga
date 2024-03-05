@@ -1,0 +1,233 @@
+:root {
+  --heading-font: "Sora", sans-serif;
+  --body-font: "Roboto", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.yoga--classes--description {
+  background-color: #498f78;
+}
+.yoga__btn {
+  color: #000;
+  font-family: var(--heading-font);
+  font-size: 12px;
+  background-color: #fff;
+  border-radius: 20px;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.yoga--card__a {
+  display: flex;
+}
+.yoga__btn__hover {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+.yoga--classes--description__a {
+  border-bottom: 1px solid #fff;
+}
+.yoga--classes--description--card h3 {
+  margin: 0;
+  font-size: 48px;
+  color: #fff;
+  font-family: var(--heading-font);
+  font-weight: 400;
+}
+.card {
+  background-color: transparent !important;
+  border: none !important;
+}
+/* card hover */
+.card:hover .yoga__btn__hover {
+  background-color: #fff;
+  color: #000;
+}
+.card:hover .card--arrow {
+  background-color: #e1c366;
+}
+.card:hover .blog--card--arrow {
+  background-color: #000;
+}
+.card:hover .blog--card--arrow {
+  background-color: #000;
+}
+.card:hover .blog--card--arrow--icon {
+  color: #fff;
+}
+.card:hover .blog--img--card {
+  transform: scale(1.1);
+}
+.card__image {
+  border-radius: 30px;
+  position: relative;
+}
+.card__image a {
+  display: block;
+  overflow: hidden;
+  border-radius: 30px;
+}
+.card--arrow {
+  position: absolute;
+  bottom: -25px;
+  right: -15px;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  border: 15px solid #498f78;
+  transition: background-color 0.5s ease-in-out;
+}
+.card--arrow .material-symbols-outlined {
+  transition: color 0.5s ease-in-out;
+}
+.card--arrow::before {
+  content: "";
+  position: absolute;
+  bottom: 69px;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border-radius: 50%;
+  box-shadow: 10px 10px 0 #498f78;
+}
+.card--arrow::after {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  right: 68px;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border-radius: 50%;
+  box-shadow: 14px 14px 0 #498f78;
+}
+.card--body__a a {
+  color: #fff;
+  font-family: var(--heading-font);
+  font-size: 28px;
+  font-weight: 500;
+  text-decoration: none;
+}
+.card--body__a a:hover {
+  color: #e1c366;
+}
+.card--body--class--details {
+  display: flex;
+}
+.card--body--class--details p {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: var(--body-font);
+  color: #fff;
+}
+.card--body--class--details span {
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+}
+.yoga--card--section {
+  position: relative;
+}
+.yoga--blog--description {
+  background-color: transparent;
+}
+.blog__btn {
+  border: 1px solid #000;
+}
+.yoga--blog--description__a {
+  border-bottom: 1px solid #000;
+}
+.yoga--blog--description .yoga__btn__hover {
+  color: #000;
+  background-color: #fff;
+  border: none;
+}
+.yoga--blog--description .yoga__btn__hover:hover {
+  background-color: #498f78;
+  color: #fff;
+}
+.yoga--blog--description .card--arrow {
+  border-color: #fff;
+  background-color: #e1c366;
+}
+.yoga--blog--description .card--arrow::after {
+  box-shadow: 14px 14px 0 #fff;
+}
+.yoga--blog--description .card--arrow::before {
+  box-shadow: 14px 14px 0 #fff;
+}
+.yoga--blog--description .card--body__a a,
+.yoga--blog--description .card--body--class--details span,
+.yoga--blog--description .card--body--class--details p,
+.yoga--blog--description--card h3 {
+  color: #000;
+}
+.yoga--blog--description .card__image a {
+  overflow: hidden;
+}
+.yoga--blog--description .card__image a img {
+  transition: transform 0.5s ease-in-out;
+}
+/* swiper css */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+}
+.swiper-button-next {
+  top: -60px !important;
+  right: 60px !important;
+}
+
+.swiper-button-prev {
+  top: -60px !important;
+  left: 1090px !important;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  color: #fff !important;
+  border: 1px solid #fff;
+  padding: 0 30px;
+  border-radius: 10px;
+}
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: #000 !important;
+  background-color: #fff;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 20px !important;
+}
+.yoga--blog--description .swiper-button-next,
+.yoga--blog--description .swiper-button-prev {
+  color: #000 !important;
+  border: 1px solid #000 !important;
+}
+.yoga--blog--description .swiper-button-next:hover,
+.yoga--blog--description .swiper-button-prev:hover {
+  color: #fff !important;
+  background-color: #000 !important;
+}
