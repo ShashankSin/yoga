@@ -10,6 +10,7 @@
 .yoga--classes--description {
   background-color: #498f78;
 }
+
 .yoga__btn {
   color: #000;
   font-family: var(--heading-font);
@@ -89,20 +90,19 @@
 }
 .card--arrow {
   position: absolute;
-  bottom: -25px;
-  right: -15px;
+  bottom: -2px;
+  right: 33px;
   background-color: #fff;
-  padding: 15px;
+  padding: 16px;
   border-radius: 50%;
   display: inline-flex;
   align-items: center;
-  border: 15px solid #498f78;
   transition: background-color 0.5s ease-in-out;
 }
 .card--arrow .material-symbols-outlined {
   transition: color 0.5s ease-in-out;
 }
-.card:hover .arrow__hover {
+.blog--section--card--swiper:hover .arrow__hover {
   visibility: visible;
   transform: scale(1) translate(15px, -15px);
   color: #fff;
@@ -115,7 +115,7 @@
   visibility: hidden;
   transition: transform 0.5s ease-in-out, visibility 0.5s ease-in-out !important;
 }
-.card:hover .arrow__hover__hidden {
+.blog--section--card--swiper:hover .arrow__hover__hidden {
   visibility: hidden;
   color: #fff;
   transform: scale(0.26) translate(15px, -10px);
@@ -123,28 +123,7 @@
 .arrow__hover__hidden {
   transition: transform 0.5s ease-in-out, visibility 0.5s ease-in-out !important;
 }
-.card--arrow::before {
-  content: "";
-  position: absolute;
-  bottom: 69px;
-  right: 0;
-  width: 40px;
-  height: 40px;
-  background-color: transparent;
-  border-radius: 50%;
-  box-shadow: 14px 13px 0 #498f78;
-}
-.card--arrow::after {
-  content: "";
-  position: absolute;
-  bottom: 10px;
-  right: 68px;
-  width: 40px;
-  height: 40px;
-  background-color: transparent;
-  border-radius: 50%;
-  box-shadow: 14px 14px 0 #498f78;
-}
+
 .card--body__a a {
   color: #fff;
   font-family: var(--heading-font);
@@ -196,12 +175,6 @@
   border-color: #fff;
   background-color: #e1c366;
 }
-.yoga--blog--description .card--arrow::after {
-  box-shadow: 14px 14px 0 #fff;
-}
-.yoga--blog--description .card--arrow::before {
-  box-shadow: 14px 14px 0 #fff;
-}
 .yoga--blog--description .card--body__a a,
 .yoga--blog--description .card--body--class--details span,
 .yoga--blog--description .card--body--class--details p,
@@ -252,40 +225,21 @@
 .card-body {
   position: relative;
 }
+.yoga--card--section--swiper {
+  position: relative;
+}
 .card--body--popup {
   position: absolute;
-  top: -5px;
-  right: -5px;
+  top: 0px;
+  right: 9px;
 }
 .card--body--popup i {
   background-color: #498f78;
-  padding: 15px;
+  padding: 13px;
   border-radius: 50%;
-  border: 10px solid #e9f0ec;
   color: #fff;
 }
-.card--body--popup::before {
-  content: "";
-  position: absolute;
-  top: 4px;
-  right: 61px;
-  width: 20px;
-  height: 20px;
-  background-color: transparent;
-  box-shadow: 14px -5px 0 #e9f0ec;
-  border-radius: 50%;
-}
-.card--body--popup::after {
-  content: "";
-  position: absolute;
-  top: 60px;
-  right: 3px;
-  width: 20px;
-  height: 20px;
-  background-color: transparent;
-  box-shadow: 4px -9px 0 #e9f0ec;
-  border-radius: 50%;
-}
+
 .card--body__text p {
   margin: 0;
   font-family: var(--body-font);
@@ -333,14 +287,16 @@
   transform-origin: left;
   transition: transform 0.5s ease-in-out;
 }
-.blog--section--card .card:hover .blog--card--body__line::before {
+.blog--section--card
+  .blog--section--card--swiper:hover
+  .blog--card--body__line::before {
   transform: scaleX(1);
 }
 .blog--btn__hover {
   transition: all 0.5s ease-in-out;
   padding: 5px 15px;
 }
-.blog--section--card .card:hover .blog--btn__hover {
+.blog--section--card .blog--section--card--swiper:hover .blog--btn__hover {
   background-color: #000;
   color: #fff;
 }
@@ -351,20 +307,190 @@
   border-color: #e9f0ec;
   background-color: #e5c466;
 }
-.blog--card--arrow::before {
-  box-shadow: 14px 13px 0 #e9f0ec;
-}
-.blog--card--arrow::after {
-  bottom: 3px;
-  right: 68px;
 
-  box-shadow: 8px 9px 0 #e9f0ec;
-}
-.blog--section--card .card:hover .blog--card--arrow {
+.blog--section--card .blog--section--card--swiper:hover .blog--card--arrow {
   background-color: #498f78;
   color: #fff;
 }
-
+.yoga--card {
+  clip-path: polygon(
+    6.726% 100%,
+    93.274% 100%,
+    93.274% 100%,
+    94.364% 99.896%,
+    95.399% 99.594%,
+    96.364% 99.111%,
+    97.245% 98.464%,
+    98.029% 97.668%,
+    98.701% 96.741%,
+    99.249% 95.698%,
+    99.657% 94.556%,
+    99.912% 93.332%,
+    100% 92.042%,
+    100% 28.912%,
+    100% 28.912%,
+    99.732% 25.399%,
+    98.988% 22.786%,
+    97.863% 20.91%,
+    96.447% 19.608%,
+    94.835% 18.717%,
+    93.119% 18.071%,
+    91.39% 17.508%,
+    89.742% 16.865%,
+    88.268% 15.977%,
+    87.061% 14.682%,
+    87.061% 14.682%,
+    86.147% 12.968%,
+    85.483% 11.096%,
+    84.946% 9.146%,
+    84.409% 7.198%,
+    83.749% 5.331%,
+    82.839% 3.624%,
+    81.556% 2.158%,
+    79.775% 1.012%,
+    77.369% 0.266%,
+    74.215% 0%,
+    6.726% 0%,
+    6.726% 0%,
+    5.636% 0.104%,
+    4.601% 0.406%,
+    3.636% 0.889%,
+    2.755% 1.536%,
+    1.971% 2.332%,
+    1.299% 3.259%,
+    0.751% 4.302%,
+    0.343% 5.444%,
+    0.088% 6.668%,
+    0% 7.958%,
+    0% 92.042%,
+    0% 92.042%,
+    0.088% 96.332%,
+    0.343% 94.556%,
+    0.751% 95.698%,
+    1.299% 96.741%,
+    1.971% 97.668%,
+    2.755% 98.464%,
+    3.636% 99.111%,
+    4.601% 99.594%,
+    5.636% 99.896%,
+    6.726% 100%
+  );
+}
+.blog--card--swiper {
+  clip-path: polygon(
+    0% 0%,
+    92.788% 0%,
+    92.788% 0%,
+    93.958% 0.111%,
+    95.067% 0.432%,
+    96.101% 0.947%,
+    97.046% 1.636%,
+    97.887% 2.483%,
+    98.608% 3.471%,
+    99.195% 4.581%,
+    99.632% 5.797%,
+    99.906% 7.101%,
+    100% 8.475%,
+    100% 69.209%,
+    100% 69.209%,
+    99.712% 72.951%,
+    98.915% 75.734%,
+    97.709% 77.731%,
+    96.191% 79.118%,
+    94.463% 80.067%,
+    92.622% 80.755%,
+    90.769% 81.354%,
+    89.003% 82.039%,
+    87.422% 82.985%,
+    86.127% 84.364%,
+    86.127% 84.364%,
+    85.148% 86.19%,
+    84.436% 88.183%,
+    83.86% 90.259%,
+    83.285% 92.334%,
+    82.577% 94.323%,
+    81.602% 96.14%,
+    80.226% 97.702%,
+    78.316% 98.922%,
+    75.737% 99.716%,
+    72.356% 100%,
+    0% 100%
+  );
+}
+.yoga--classes--description .card__image {
+  clip-path: polygon(
+    6.772% 0%,
+    93.228% 0%,
+    93.228% 0%,
+    94.326% 0.099%,
+    95.367% 0.386%,
+    96.339% 0.846%,
+    97.226% 1.463%,
+    98.016% 2.22%,
+    98.693% 3.103%,
+    99.244% 4.096%,
+    99.655% 5.182%,
+    99.911% 6.348%,
+    100% 7.576%,
+    100% 72.475%,
+    100% 72.475%,
+    99.73% 75.82%,
+    98.982% 78.307%,
+    97.848% 80.093%,
+    96.423% 81.332%,
+    94.8% 82.182%,
+    93.072% 82.796%,
+    91.332% 83.332%,
+    89.673% 83.944%,
+    88.189% 84.789%,
+    86.973% 86.023%,
+    86.973% 86.023%,
+    86.053% 87.654%,
+    85.385% 89.436%,
+    84.844% 91.292%,
+    84.304% 93.147%,
+    83.639% 94.925%,
+    82.723% 96.55%,
+    81.431% 97.945%,
+    79.638% 99.036%,
+    77.216% 99.746%,
+    74.041% 100%,
+    6.772% 100%,
+    6.772% 100%,
+    5.674% 99.901%,
+    4.633% 99.614%,
+    3.661% 99.154%,
+    2.774% 98.537%,
+    1.984% 97.78%,
+    1.307% 96.897%,
+    0.756% 95.904%,
+    0.345% 94.818%,
+    0.089% 93.652%,
+    0% 92.424%,
+    0% 7.576%,
+    0% 7.576%,
+    0.089% 6.348%,
+    0.345% 5.182%,
+    0.756% 4.096%,
+    1.307% 3.103%,
+    1.984% 2.22%,
+    2.774% 1.463%,
+    3.661% 0.846%,
+    4.633% 0.386%,
+    5.674% 0.099%,
+    6.772% 0%
+  );
+}
+.blog--section--card--swiper {
+  position: relative;
+}
+.yoga--classes--images {
+  position: relative;
+}
+.yoga--arrow {
+  bottom: -6px;
+  right: 0px;
+}
 /* swiper css */
 .swiper {
   width: 100%;
