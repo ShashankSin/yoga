@@ -88,6 +88,9 @@
   overflow: hidden;
   border-radius: 30px;
 }
+.card__image a img {
+  transition: transform 0.5s ease-in-out;
+}
 .card--arrow {
   position: absolute;
   bottom: -2px;
@@ -120,6 +123,12 @@
   color: #fff;
   transform: scale(0.26) translate(15px, -10px);
 }
+.blog--section--card--swiper .card__image a {
+  overflow: hidden;
+}
+.blog--section--card--swiper:hover .img-fluid {
+  transform: scale(1.1);
+}
 .arrow__hover__hidden {
   transition: transform 0.5s ease-in-out, visibility 0.5s ease-in-out !important;
 }
@@ -151,6 +160,9 @@
 }
 .yoga--card--section {
   position: relative;
+}
+.yoga--card--section .card:hover .card-img-top {
+  transform: scale(1.1);
 }
 .yoga--blog--description {
   background-color: transparent;
@@ -548,4 +560,42 @@
 .swiper-button-prev-blog:hover {
   color: #fff !important;
   background-color: #000 !important;
+}
+
+/* contact--section */
+.contact {
+  background-color: #e9f0ec;
+}
+.contact--section--card__icon > div > span {
+  color: #000;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 50%;
+  font-size: 30px;
+  margin: 10px;
+}
+.contact--section--card__icon > div {
+  border: 3px solid #498f78;
+  border-radius: 50%;
+}
+.contact--section--card__text h3,
+.contact--section--card__text p {
+  margin: 0;
+}
+.contact--section--card__text h3 {
+  font-family: var(--heading-font);
+  font-size: 22px;
+  font-weight: 500;
+  color: #000;
+  border-bottom: 1px solid #cdcdcd;
+}
+.contact--section--card__text p {
+  font-family: var(--body-font);
+  font-size: 16px;
+  font-weight: 400;
+  color: #706f6f;
+}
+.contact--section--card__text p a {
+  color: #706f6f;
+  text-decoration: none;
 }
