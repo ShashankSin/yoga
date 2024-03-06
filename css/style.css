@@ -267,12 +267,16 @@
   font-size: 20px !important;
 }
 .yoga--blog--description .swiper-button-next,
-.yoga--blog--description .swiper-button-prev {
+.yoga--blog--description .swiper-button-prev,
+.yoga--instructor--card .swiper-button-next,
+.yoga--instructor--card .swiper-button-prev {
   color: #000 !important;
   border: 1px solid #000 !important;
 }
 .yoga--blog--description .swiper-button-next:hover,
-.yoga--blog--description .swiper-button-prev:hover {
+.yoga--blog--description .swiper-button-prev:hover,
+.yoga--instructor--card .swiper-button-next:hover,
+.yoga--instructor--card .swiper-button-prev:hover {
   color: #fff !important;
   background-color: #000 !important;
 }
