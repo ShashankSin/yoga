@@ -102,6 +102,27 @@
 .card--arrow .material-symbols-outlined {
   transition: color 0.5s ease-in-out;
 }
+.card:hover .arrow__hover {
+  visibility: visible;
+  transform: scale(1) translate(15px, -15px);
+  color: #fff;
+}
+.arrow__hover {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: scale(0.26) translate(15px, -10px);
+  visibility: hidden;
+  transition: transform 0.5s ease-in-out, visibility 0.5s ease-in-out !important;
+}
+.card:hover .arrow__hover__hidden {
+  visibility: hidden;
+  color: #fff;
+  transform: scale(0.26) translate(15px, -10px);
+}
+.arrow__hover__hidden {
+  transition: transform 0.5s ease-in-out, visibility 0.5s ease-in-out !important;
+}
 .card--arrow::before {
   content: "";
   position: absolute;
@@ -343,6 +364,7 @@
   background-color: #498f78;
   color: #fff;
 }
+
 /* swiper css */
 .swiper {
   width: 100%;
