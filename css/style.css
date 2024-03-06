@@ -50,7 +50,8 @@
   background-color: transparent !important;
   border: none !important;
 }
-.yoga--instructor {
+.yoga--instructor,
+.blog--section {
   background-color: #e9f0ec;
 }
 .yoga--instructor--card .card {
@@ -110,7 +111,7 @@
   height: 40px;
   background-color: transparent;
   border-radius: 50%;
-  box-shadow: 10px 10px 0 #498f78;
+  box-shadow: 14px 13px 0 #498f78;
 }
 .card--arrow::after {
   content: "";
@@ -156,6 +157,7 @@
 }
 .blog__btn {
   border: 1px solid #000;
+  background-color: transparent;
 }
 .yoga--blog--description__a {
   border-bottom: 1px solid #000;
@@ -232,7 +234,7 @@
 .card--body--popup {
   position: absolute;
   top: -5px;
-  right: -25px;
+  right: -5px;
 }
 .card--body--popup i {
   background-color: #498f78;
@@ -255,13 +257,91 @@
 .card--body--popup::after {
   content: "";
   position: absolute;
-  top: 66px;
-  right: 25px;
+  top: 60px;
+  right: 3px;
   width: 20px;
   height: 20px;
   background-color: transparent;
-  box-shadow: 5px -4px 0 #e9f0ec;
+  box-shadow: 4px -9px 0 #e9f0ec;
   border-radius: 50%;
+}
+.card--body__text p {
+  margin: 0;
+  font-family: var(--body-font);
+  font-weight: 400;
+  font-size: 15px;
+  color: #706f6f;
+}
+.card--body__heading {
+  margin: 0;
+  font-family: var(--heading-font);
+  font-size: 26px;
+  font-weight: 400;
+}
+.blog--section--card .card__image {
+  width: 320px;
+  height: 340px;
+  overflow: hidden;
+}
+.blog--section--card .card__image a {
+  width: 320px;
+  height: 340px;
+  overflow: hidden;
+}
+.blog--section--card .card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.blog--section .card {
+  border-radius: 30px;
+}
+.blog--card--body__line {
+  width: 100%;
+  height: 2px;
+  background-color: #e7e6e6;
+  z-index: 1;
+}
+.blog--card--body__line::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s ease-in-out;
+}
+.blog--section--card .card:hover .blog--card--body__line::before {
+  transform: scaleX(1);
+}
+.blog--btn__hover {
+  transition: all 0.5s ease-in-out;
+  padding: 5px 15px;
+}
+.blog--section--card .card:hover .blog--btn__hover {
+  background-color: #000;
+  color: #fff;
+}
+.blog--section--card .card .card-body {
+  position: relative;
+}
+.blog--card--arrow {
+  border-color: #e9f0ec;
+  background-color: #e5c466;
+}
+.blog--card--arrow::before {
+  box-shadow: 14px 13px 0 #e9f0ec;
+}
+.blog--card--arrow::after {
+  bottom: 3px;
+  right: 68px;
+
+  box-shadow: 8px 9px 0 #e9f0ec;
+}
+.blog--section--card .card:hover .blog--card--arrow {
+  background-color: #498f78;
+  color: #fff;
 }
 /* swiper css */
 .swiper {
@@ -306,14 +386,18 @@
 .yoga--blog--description .swiper-button-next,
 .yoga--blog--description .swiper-button-prev,
 .yoga--instructor--card .swiper-button-next,
-.yoga--instructor--card .swiper-button-prev {
+.yoga--instructor--card .swiper-button-prev,
+.swiper-button-next-blog,
+.swiper-button-prev-blog {
   color: #000 !important;
   border: 1px solid #000 !important;
 }
 .yoga--blog--description .swiper-button-next:hover,
 .yoga--blog--description .swiper-button-prev:hover,
 .yoga--instructor--card .swiper-button-next:hover,
-.yoga--instructor--card .swiper-button-prev:hover {
+.yoga--instructor--card .swiper-button-prev:hover,
+.swiper-button-next-blog:hover,
+.swiper-button-prev-blog:hover {
   color: #fff !important;
   background-color: #000 !important;
 }
