@@ -226,6 +226,43 @@
 .card--profile--text p {
   color: #706f6f;
 }
+.card-body {
+  position: relative;
+}
+.card--body--popup {
+  position: absolute;
+  top: -5px;
+  right: -25px;
+}
+.card--body--popup i {
+  background-color: #498f78;
+  padding: 15px;
+  border-radius: 50%;
+  border: 10px solid #e9f0ec;
+  color: #fff;
+}
+.card--body--popup::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  right: 61px;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  box-shadow: 14px -5px 0 #e9f0ec;
+  border-radius: 50%;
+}
+.card--body--popup::after {
+  content: "";
+  position: absolute;
+  top: 66px;
+  right: 25px;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  box-shadow: 5px -4px 0 #e9f0ec;
+  border-radius: 50%;
+}
 /* swiper css */
 .swiper {
   width: 100%;
