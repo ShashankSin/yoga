@@ -658,13 +658,49 @@
   border-right: none;
   border-left: none;
 }
-.contact--section--left form > div input[type="submit"] {
-  padding: 5px 15px;
+.contact--section--left form > div button {
+  padding: 10px 40px 10px 20px;
   border-radius: 30px;
   background-color: #498f78;
   border: none;
   outline: none;
   color: #fff;
+  text-transform: uppercase;
+  position: relative;
+  font-weight: 500;
+  transition: all 0.5s ease-in-out;
+}
+.contact--section--left form > div button:hover {
+  background-color: #000;
+  color: #fff;
+}
+.contact--section--left form > div button .btn-arrow {
+  position: absolute;
+  top: 10px;
+  right: -20px;
+}
+.contact--section--left form > div button .btn-arrow .btn-arrow_hover {
+  position: absolute;
+  top: 0px;
+  right: 30px;
+  transition: all 0.5s ease-in-out;
+}
+.contact--section--left form > div button .btn-arrow .btn-arrow__hover__hidden {
+  transition: all 0.5s ease-in-out;
+  top: 13px;
+  right: 44px;
+  position: absolute;
+  font-size: 22px;
+  transform: scale(0.26) translate(13px, -12px);
+  visibility: hidden;
+}
+.contact--section--left form > div button:hover .btn-arrow__hover__hidden {
+  transform: scale(1) translate(13px, -12px);
+  visibility: visible;
+}
+.contact--section--left form > div button:hover .btn-arrow_hover {
+  transform: scale(0.26) translate(13px, -12px);
+  visibility: hidden;
 }
 .contact--card {
   background-color: #498f78;
@@ -776,12 +812,13 @@
   position: absolute;
   bottom: 15px;
   right: 5px;
+  transition: all 0.5s ease-in-out;
 }
 .contact--card--share span {
   background-color: #fff;
   padding: 20px;
   border-radius: 50%;
-  transition: background-color 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .contact--card--share span:hover {
   transform: rotate(180deg);
@@ -790,6 +827,44 @@
 
 .contact--card--social {
   position: absolute;
-  bottom: 0;
-  right: 0;
+  bottom: 10px;
+  right: 40px;
+  transform: translate(0px, 0);
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.contact--card--social i {
+  font-size: 26px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+  transition: all 0.5s ease-in-out;
+}
+.contact--card--social .bxl-facebook {
+  transform: translate(0, 0);
+}
+.contact--card--social .bxl-twitter {
+  transform: translate(43px, 0);
+}
+.contact--card--social .bxl-linkedin {
+  transform: translate(86px, 0);
+}
+.contact--card--social .bxl-instagram {
+  transform: translate(129px, 0);
+}
+.contact--card--share:hover .contact--card--social {
+  opacity: 1;
+}
+.contact--card--share:hover .bxl-facebook {
+  transform: translate(-40px, 0);
+}
+.contact--card--share:hover .bxl-twitter {
+  transform: translate(-40px, 0);
+}
+.contact--card--share:hover .bxl-linkedin {
+  transform: translate(-40px, 0);
+}
+.contact--card--share:hover .bxl-instagram {
+  transform: translate(-40px, 0);
 }
