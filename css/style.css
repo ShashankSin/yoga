@@ -569,9 +569,9 @@
 .contact--section--card__icon > div > span {
   color: #000;
   background-color: #fff;
-  padding: 20px;
+  padding: 30px;
   border-radius: 50%;
-  font-size: 30px;
+  font-size: 40px;
   margin: 10px;
   position: relative;
   z-index: 1;
@@ -600,8 +600,8 @@
 .contact--section--card__icon > div {
   border: 3px solid #498f78;
   border-radius: 50%;
-  width: 98px;
-  height: 98px;
+  width: 128px;
+  height: 128px;
 }
 .contact--section--card__text h3,
 .contact--section--card__text p {
