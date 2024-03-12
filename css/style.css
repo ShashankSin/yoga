@@ -868,15 +868,9 @@
 .contact--card--share:hover .contact--card--social {
   opacity: 1;
 }
-.contact--card--share:hover .bxl-facebook {
-  transform: translate(-40px, 0);
-}
-.contact--card--share:hover .bxl-twitter {
-  transform: translate(-40px, 0);
-}
-.contact--card--share:hover .bxl-linkedin {
-  transform: translate(-40px, 0);
-}
+.contact--card--share:hover .bxl-facebook,
+.contact--card--share:hover .bxl-twitter,
+.contact--card--share:hover .bxl-linkedin,
 .contact--card--share:hover .bxl-instagram {
   transform: translate(-40px, 0);
 }
