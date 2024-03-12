@@ -820,6 +820,7 @@
   bottom: 15px;
   right: 5px;
   transition: all 0.5s ease-in-out;
+  cursor: pointer;
 }
 .contact--card--share span {
   background-color: #fff;
@@ -847,6 +848,10 @@
   border-radius: 50%;
   margin-right: 0.5rem;
   transition: all 0.5s ease-in-out;
+}
+.contact--card--social i:hover {
+  background-color: #000;
+  color: #fff;
 }
 .contact--card--social .bxl-facebook {
   transform: translate(0, 0);
